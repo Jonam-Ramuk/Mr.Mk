@@ -1,0 +1,50 @@
+<html>
+    <head>
+      <link href="form.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <form action="bassics.html"method="post"target="_self"autocomplete="on">
+            <h1><u>The complete registration form with perfect Javascript validation</u></h1><br><br>
+
+            <label>Enter your Name:</label>
+            <input type="text" name="username" pattern="[A-Za-z]{2}"><br><br>
+
+            <label>Enter Your Mail-ID:</label>
+            <input type="email" name="email" required></label><br><br>
+
+            <label>Choose your Gender:</label>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="female">Female<br><br>
+
+            <label>Create Your Password:</label>
+            <input maxlength="7" minlength="3" type="password" name="Password"><br><br>
+
+            <label>Confirm Your Password:</label>
+            <input type="password" name="confirm Password"disabled><br><br>
+
+            <label>Mobile No:</label>
+            <input type="text" name="Mobile No" pattern="[0-9]{10}"><br><br>
+
+            <label>choose Your DOB:</label>
+            <input type="date" name="DOB"><br><br>
+
+            <label>Enter Your Address:</label>
+            <textarea rows="2"col="50" name="address"></textarea><br><br>
+
+            <label>Choose your location:</label>
+            <input list="cities">
+           <datalist id="cities">
+            <option value="">--select--</option>
+            <option value="Namakkal">Namakkal</option>
+            <option value="Trichy">Trichy</option>
+            <option value="salem">salem</option>
+           </datalist><br><br>
+
+            <input type="submit">
+            <input type="reset">
+
+            
+
+        </form>
+    </body>
+</html>
